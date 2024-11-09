@@ -28,13 +28,13 @@ const Navbar: React.FC = () => {
             placeholder="Search..."
             className="w-full p-2 pl-10 rounded-md text-gray-800"
           />
-          <FaSearch className="w-6 h-6 text-gray-500" />
+          <FaSearch className="w-5 h-5 text-gray-500 absolute top-1/2 left-3 transform -translate-y-1/2" />
         </div>
       </div>
 
       <div className="flex items-center space-x-4">
         <button className="relative">
-          <FaBell className="w-6 h-6 text-gray-500" />
+          <FaBell className="w-6 h-6 text-white" />
         </button>
         <div className="flex items-center space-x-2">
           <span className="hidden sm:block">{userName}</span>
