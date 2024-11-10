@@ -1,0 +1,62 @@
+/* Main container for the category menu */
+.category-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f8f8; /* Light background color */
+    border-bottom: 1px solid #e0e0e0; /* Light border at the bottom */
+  }
+  
+  /* Individual category item styling */
+  .category-menu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-menu div:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+  }
+  
+  /* Category images styling */
+  .category-menu img {
+    width: 60px; /* Width of the images */
+    height: 60px; /* Height of the images */
+    margin-bottom: 8px; /* Space between image and text */
+  }
+  
+  /* Category text */
+  .category-menu p {
+    font-size: 14px;
+    color: #333; /* Text color */
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .category-menu {
+      flex-wrap: wrap; /* Allows the categories to wrap on smaller screens */
+    }
+  
+    .category-menu div {
+      margin: 10px;
+      width: 80px;
+    }
+  
+    .category-menu img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .category-menu p {
+      font-size: 12px;
+    }
+  }
+  
